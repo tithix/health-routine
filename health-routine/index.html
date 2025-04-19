@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Routine Santé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Ma Routine Santé</h1>
+    <form id="routine-form">
+        <label><input type="checkbox" id="walk"> Marcher 5,25 km</label><br>
+        <label><input type="checkbox" id="stretching"> Faire des étirements</label><br>
+        <label><input type="checkbox" id="workout"> Faire un workout</label><br>
+        <label><input type="checkbox" id="intermittent-fast"> Jeûne intermittent 18/6</label><br>
+        <button type="submit">Enregistrer</button>
+    </form>
+
+    <div>
+        <h2>Pesée du lundi :</h2>
+        <input type="number" id="weight" placeholder="Entrez votre poids (kg)">
+        <button onclick="saveWeight()">Enregistrer le poids</button>
+        <div id="weight-history"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
